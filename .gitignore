@@ -2,3 +2,7 @@ node_modules/
 
 .env
 .DS_Store
+
+# Ignore nested sub-repos
+jsd12-full-stack-app/backend/
+jsd12-full-stack-app/frontend/

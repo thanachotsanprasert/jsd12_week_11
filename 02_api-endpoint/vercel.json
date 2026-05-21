@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/",
+            "status": 301,
+            "headers": { "Location": "/api/characters" }
+        },
+        {
+            "src": "/(.*)",
+            "dest": "index.js"
+        }
+    ]
+}
